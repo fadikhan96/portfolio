@@ -119,12 +119,13 @@ const CONFIG = {
     },
   },
 
-  seo: {
-    title: 'Fahad Amin — Flutter Developer (4.8+ yrs)',
-    description:
-      'Flutter developer with 4.8+ years building cross‑platform apps: payments (Apple Pay/Google Pay/3DS), Firebase, Maps, CI/CD, and App Store/Play Store deployment.',
-    imageURL: '', // Optional: add an Open Graph image URL
-  },
+  {
+  title: 'About Me',
+  description:
+    'Hi, I’m Fahad Amin, a Flutter developer in Pakistan with 5 years of experience. I build cross-platform apps using Flutter and Dart, with expertise in Firebase, CI/CD, and Payment Integrations (Apple Pay, Google Pay, 3DS).',
+  imageUrl: 'https://avatars.githubusercontent.com/u/27143233?v=4',
+  link: '#',
+},
 
   social: {
     linkedin: 'https://www.linkedin.com/in/fahad-amin-43916b135/',
@@ -138,7 +139,7 @@ const CONFIG = {
 
   resume: {
     fileUrl:
-      'https://drive.google.com/file/d/1Ud5o2OOX-Gxce1E73uxCBcaXI9gMCXC9/view?usp=drive_link',
+      'https://drive.google.com/drive/folders/1kKJQCKvYo0D2UWdGD9dJuVU-3LYjMIlt',
   },
 
   skills: [
@@ -152,7 +153,7 @@ const CONFIG = {
     'Apple Pay',
     'Google Pay',
     'Google Maps',
-    'Version Control (Git)',
+    'Version Control (Git,Bitbucket)',
     'Google Play Console Configuration',
     'Apple App Store Configuration',
     'Testing (Unit & Widget)',
