@@ -12,7 +12,7 @@ const CONFIG = {
 
   projects: {
     github: {
-      display: true, // Show GitHub projects for social proof
+      display: false, // Show GitHub projects for social proof
       header: 'GitHub Projects',
       mode: 'automatic',
       automatic: {
