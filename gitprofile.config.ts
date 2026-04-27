@@ -7,7 +7,7 @@ const CONFIG = {
 
   projects: {
     github: {
-      display: true,
+      display: false,
       header: 'GitHub Projects',
       mode: 'automatic',
       automatic: {
@@ -25,6 +25,18 @@ const CONFIG = {
     external: {
       header: 'Featured Products and Apps',
       projects: [
+        {
+          title: 'Tadawuly / Mubasher.Info',
+          description:
+            'Real-time financial market app with market overview, company profiles, announcements, watchlists, predictions, AI features, and portfolio insights.',
+          link: 'https://play.google.com/store/apps/details?id=com.gfm.tadawuly',
+        },
+        {
+          title: 'Mubasher Trade (mTrade)',
+          description:
+            'Trading-focused app with market watch, symbol details, trading flows, portfolio features, and real-time financial data.',
+          link: 'https://play.google.com/store/apps/details?id=com.mfs.mtrade.twsl',
+        },
         {
           title: 'Yalla Super App',
           description:
@@ -77,10 +89,26 @@ const CONFIG = {
   },
 
   seo: {
-    title: 'Fahad Amin | Flutter Developer Portfolio',
+    title: 'Fahad Amin - Flutter Developer | Mobile App Engineer',
     description:
-      'Flutter developer with 5+ years of experience delivering high-quality cross-platform products, payments, maps, and scalable mobile experiences.',
+      'Fahad Amin is a Flutter Developer with 5+ years of experience building cross-platform mobile apps using Flutter and Dart, including payments, maps, Firebase, and CI/CD.',
     imageURL: 'https://avatars.githubusercontent.com/u/27143233?v=4',
+    keywords: [
+      'Fahad Amin',
+      'Fahad Amin Flutter Developer',
+      'Flutter Developer',
+      'Flutter Developer Pakistan',
+      'Dart Developer',
+      'Mobile App Developer',
+      'Cross Platform App Developer',
+      'Flutter Engineer',
+      'Firebase Flutter',
+      'Flutter Portfolio',
+    ],
+    siteUrl: 'https://fadikhan96.github.io/portfolio/',
+    author: 'Fahad Amin',
+    jobTitle: 'Flutter Developer',
+    location: 'Pakistan',
   },
 
   social: {
@@ -115,22 +143,33 @@ const CONFIG = {
     'Flutter',
     'Dart',
     'Flutter Web',
+    'Cross-Platform Mobile Development',
+    'Clean Architecture',
+    'MVC and MVVM',
     'REST APIs',
+    'WebSockets',
+    'Dio and HTTP',
     'State Management (Riverpod, Bloc, GetX, Provider)',
     'Firebase (Auth, FCM, Dynamic Links)',
     'Payment Integration (Apple Pay, Google Pay, 3DS)',
+    'In-App Payments (3DS and Non-3DS)',
     'Google Maps and Geolocation',
+    'GPS Tracking and Geofencing',
+    'Pagination, Search, and Filtering',
     'Responsive UI and UX',
+    'Reusable Component Design',
+    'UAT and Production Support',
     'CI/CD (GitHub Actions, Fastlane)',
     'App Store and Play Store Releases',
+    'Firebase App Distribution and TestFlight',
     'Unit and Widget Testing',
   ],
 
   experiences: [
     {
-      company: 'Global Financial Media',
-      position: 'Flutter Developer',
-      from: 'Aug 2025',
+      company: 'Global Financial Media / Mubasher Information Group',
+      position: 'Senior Mobile Engineer / Flutter Developer',
+      from: 'Jul 2025',
       to: 'Present',
       companyLink: 'https://www.globalfinancialmedia.com/',
     },
@@ -138,7 +177,7 @@ const CONFIG = {
       company: 'PaySky',
       position: 'Flutter Developer',
       from: 'Aug 2023',
-      to: 'Aug 2025',
+      to: 'Jul 2025',
       companyLink: 'https://paysky.io/',
     },
     {
@@ -150,17 +189,10 @@ const CONFIG = {
         'https://www.linkedin.com/company/xoomacademy/?originalSubdomain=uk',
     },
     {
-      company: 'Excellence Delivered',
-      position: 'Flutter Lab Engineer (Part-Time)',
-      from: 'Jan 2022',
-      to: 'Aug 2023',
-      companyLink: 'https://www.exdnow.com/',
-    },
-    {
       company: 'CodeBreakers Technology',
       position: 'Junior Flutter Developer',
-      from: 'Mar 2021',
-      to: 'Dec 2021',
+      from: 'Jan 2020',
+      to: 'Dec 2020',
       companyLink: 'https://codebreakerstech.com/',
     },
   ],
@@ -251,8 +283,7 @@ const CONFIG = {
     },
   },
 
-  footer:
-    'Built with <a class="text-primary" href="https://github.com/arifszn/gitprofile" target="_blank" rel="noreferrer">GitProfile</a> by Fahad Amin',
+  footer: '',
 
   enablePWA: true,
 };
