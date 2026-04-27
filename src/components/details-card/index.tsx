@@ -1,6 +1,5 @@
 import { Fragment } from 'react';
 import {
-  AiFillGithub,
   AiFillInstagram,
   AiFillMediumSquare,
 } from 'react-icons/ai';
@@ -25,7 +24,6 @@ import { RiMailFill, RiPhoneFill } from 'react-icons/ri';
 import { SiResearchgate, SiTwitter, SiUdemy } from 'react-icons/si';
 import { Profile } from '../../interfaces/profile';
 import {
-  SanitizedGithub,
   SanitizedSocial,
 } from '../../interfaces/sanitized-config';
 import { skeleton } from '../../utils';
@@ -34,7 +32,6 @@ type Props = {
   profile: Profile | null;
   loading: boolean;
   social: SanitizedSocial;
-  github: SanitizedGithub;
 };
 
 const isCompanyMention = (company: string): boolean => {
@@ -151,7 +148,7 @@ const OrganizationItem: React.FC<{
  * @param {Object} github - The GitHub object.
  * @return {JSX.Element} The details card component.
  */
-const DetailsCard = ({ profile, loading, social, github }: Props) => {
+const DetailsCard = ({ profile, loading, social }: Props) => {
   const renderSkeleton = () => {
     const array = [];
     for (let index = 0; index < 4; index++) {
@@ -196,12 +193,6 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
                   }
                 />
               )}
-              <ListItem
-                icon={<AiFillGithub />}
-                title="GitHub:"
-                value={github.username}
-                link={`https://github.com/${github.username}`}
-              />
               {social?.researchGate && (
                 <ListItem
                   icon={<SiResearchgate />}
