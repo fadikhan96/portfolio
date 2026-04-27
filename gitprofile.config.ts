@@ -29,12 +29,16 @@ const CONFIG = {
           title: 'Tadawuly / Mubasher.Info',
           description:
             'Real-time financial market app with market overview, company profiles, announcements, watchlists, predictions, AI features, and portfolio insights.',
+          imageUrl:
+            'https://play-lh.googleusercontent.com/1ib_zivxoiFdCutSxRO9InUfDrQpqMOKHq8pmrqqAqIvJaaU41jcEX1xrNOaVU4c8A2V=w480-h960-rw',
           link: 'https://play.google.com/store/apps/details?id=com.gfm.tadawuly',
         },
         {
           title: 'Mubasher Trade (mTrade)',
           description:
             'Trading-focused app with market watch, symbol details, trading flows, portfolio features, and real-time financial data.',
+          imageUrl:
+            'https://play-lh.googleusercontent.com/ECjdPjcPleLWNDrxhkcz3sz0g8hmOGS75XRRhhrt8Zbg9cs2SjwBFlvAWC4fs9cdjds=w480-h960-rw',
           link: 'https://play.google.com/store/apps/details?id=com.mfs.mtrade.twsl',
         },
         {
