@@ -193,6 +193,9 @@ const GitProfile = ({ config }: { config: Config }) => {
             <HeadTagEditor
               googleAnalyticsId={sanitizedConfig.googleAnalytics.id}
               appliedTheme={theme}
+              seo={sanitizedConfig.seo}
+              social={sanitizedConfig.social}
+              skills={sanitizedConfig.skills}
             />
             <div className={`p-4 lg:p-10 min-h-full ${BG_COLOR}`}>
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 rounded-box">
@@ -215,7 +218,6 @@ const GitProfile = ({ config }: { config: Config }) => {
                     <DetailsCard
                       profile={profile}
                       loading={loading}
-                      github={sanitizedConfig.github}
                       social={sanitizedConfig.social}
                     />
                     {sanitizedConfig.skills.length !== 0 && (
