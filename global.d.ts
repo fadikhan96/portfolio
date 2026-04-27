@@ -104,6 +104,31 @@ interface SEO {
    * Meta image
    */
   imageURL?: string;
+
+  /**
+   * SEO keywords
+   */
+  keywords?: string[];
+
+  /**
+   * Canonical site URL
+   */
+  siteUrl?: string;
+
+  /**
+   * SEO author/person name
+   */
+  author?: string;
+
+  /**
+   * Primary role for SEO schema
+   */
+  jobTitle?: string;
+
+  /**
+   * Location for SEO schema
+   */
+  location?: string;
 }
 
 interface Social {
