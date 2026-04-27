@@ -1,22 +1,17 @@
-// gitprofile.config.ts — revised for clarity, SEO, and Upwork-ready portfolio
-
 const CONFIG = {
   github: {
     username: 'fadikhan96',
   },
 
-  /**
-   * Base path: since you deploy at https://<USERNAME>.github.io/portfolio/ keep this as '/portfolio/'.
-   */
   base: '/portfolio/',
 
   projects: {
     github: {
-      display: false, // Show GitHub projects for social proof
+      display: true,
       header: 'GitHub Projects',
       mode: 'automatic',
       automatic: {
-        sortBy: 'updated', // Show recent activity
+        sortBy: 'updated',
         limit: 6,
         exclude: {
           forks: true,
@@ -24,45 +19,31 @@ const CONFIG = {
         },
       },
       manual: {
-        // If you prefer to curate, switch mode to 'manual' and list repos below
-        projects: [
-          'fadikhan96/skills_within_hoop',
-          // 'fadikhan96/your-other-repo',
-        ],
+        projects: [],
       },
     },
-
     external: {
-      header: 'Featured Projects',
+      header: 'Featured Products and Apps',
       projects: [
         {
           title: 'Yalla Super App',
           description:
-            'Super app offering payments, bills, e‑commerce, pharmacy, transport, vouchers, offers & rewards. Contributed to payments and feature development.',
+            'A large-scale super app that combines payments, bills, shopping, pharmacy, transport, vouchers, and rewards. Contributed to payment and feature delivery in production.',
           imageUrl:
             'https://play-lh.googleusercontent.com/WbIkg2734q-_c4rPZhULjgm-mpBRomGhRcLmChI3PfOI_p_mIeZQ_rmZ64_frK911C8',
           link: 'https://apps.apple.com/sk/app/the-super-app-global/id6465695846',
         },
- {
-      title: 'Yalla Super Mall',
-      description:
-        'Full-fledged e-commerce store builder & marketplace within the Yalla ecosystem—lets merchants launch online stores and customers shop via Yalla Mall inside the Super App (Egypt & UAE).',
-      imageUrl: 'https://yallasupermall.com/apple-touch-icon.png',
-      link: 'https://yallasupermall.com',
-    },
-{
-  title: 'K-Optra Rider',
-  description:
-    'In-house driver app for managing daily delivery routes with real-time navigation and backend tracking. Drivers can view assigned orders, scan items to confirm pickup, capture customer signatures, and update statuses (complete/cancel/reject). The app also supports suspending and resuming routes for flexible logistics workflows, ensuring accurate proof-of-delivery and operational efficiency.',
-  imageUrl:
-    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb5LOPUgzjbz_m4aVulC-GU5zu-30HBdYnAg&s',
-  link: '#',
-},
-
+        {
+          title: 'Yalla Super Mall',
+          description:
+            'Marketplace and store-builder platform in the Yalla ecosystem where merchants launch storefronts and customers shop in-app across Egypt and UAE.',
+          imageUrl: 'https://yallasupermall.com/apple-touch-icon.png',
+          link: 'https://yallasupermall.com',
+        },
         {
           title: 'AdvoLocate',
           description:
-            'Legal-aid marketplace for South Asia connecting at‑risk users to vetted pro‑bono/paid/on‑demand lawyers. Implemented maps, onboarding, and UX flows.',
+            'Legal-aid marketplace that connects users with verified lawyers through a reliable onboarding and discovery flow.',
           imageUrl:
             'https://play-lh.googleusercontent.com/MdeNa8NiIY6NY1fmGSKp2T59G4ArTfZf4DRdveMCQYu44YYx6Vvd1pupXmoQlRsagAMf=w480-h960-rw',
           link: 'https://play.google.com/store/apps/details?id=com.advolocate',
@@ -70,7 +51,7 @@ const CONFIG = {
         {
           title: 'ELBC News',
           description:
-            'State media app for Liberia Broadcasting System. Worked on content delivery and updates for radio/TV network.',
+            'News and media streaming app for Liberia Broadcasting System with smooth content delivery and update workflows.',
           imageUrl:
             'https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/68/e8/80/68e880b3-a0f5-7a76-0f86-5aed7573c170/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.webp',
           link: 'https://apps.apple.com/pk/app/elbc-news/id6444584622',
@@ -78,61 +59,49 @@ const CONFIG = {
         {
           title: 'Xoom Academy',
           description:
-            'E‑learning platform for medical lectures. Migrated to latest Flutter, added payments & Firebase, deployed to both stores.',
+            'E-learning mobile platform for medical lectures with Flutter upgrades, payment integration, and Firebase-backed features.',
           imageUrl:
             'https://play-lh.googleusercontent.com/AR1h2Rydh6QWlD8l6Ai9iz890yyCzE3jvlYdxIfJOoTbHM-zcm8Go_rqX0WP4OwWSQ=s96-rw',
           link: 'https://play.google.com/store/apps/details?id=com.xoomm.academy&hl=en',
         },
         {
-          title: 'Wager — Social Bets',
+          title: 'Wager - Social Bets',
           description:
-            'Social betting with custom rules, participants, proofs, and outcomes. Built user flows and data models.',
+            'Social betting app with custom rules, participant management, proofs, and outcomes built for clear user flows.',
           imageUrl:
             'https://play-lh.googleusercontent.com/OhiZ12Wpl60EeDklZfzRr9gb10A-uM8-6FGuLizD6wXOp-3vrcw7jcwBI9RHvCsL2JI=w480-h960-rw',
           link: 'https://play.google.com/store/apps/details?id=com.anursidae.wager&hl=en_ZA',
-        },
-        {
-          title: 'Fvast Taxi Booking',
-          description:
-            'Ride types, driver details, ETA, and real‑time tracking. Nearby drivers receive requests and accept with full trip details.',
-          imageUrl:
-            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb5LOPUgzjbz_m4aVulC-GU5zu-30HBdYnAg&s',
-          link: '#', // TODO: add store/site link if available
-        },
-        {
-          title: 'Impact Collective',
-          description:
-            'Weather for major cities + current location, 5‑level MCQs for learning, and a daily posts module with admin CMS.',
-          imageUrl:
-            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb5LOPUgzjbz_m4aVulC-GU5zu-30HBdYnAg&s',
-          link: '#', // TODO: add link
-        },
-        {
-          title: 'Bargain Enterprise INC',
-          description:
-            'Admin panel for product uploads, categories, discounts; user app for browsing, cart, checkout; order notifications with address/phone for admins.',
-          imageUrl:
-            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb5LOPUgzjbz_m4aVulC-GU5zu-30HBdYnAg&s',
-          link: '#', // TODO: add link
         },
       ],
     },
   },
 
-  {
-  title: 'About Me',
-  description:
-    'Hi, I’m Fahad Amin, a Flutter developer in Pakistan with 5 years of experience. I build cross-platform apps using Flutter and Dart, with expertise in Firebase, CI/CD, and Payment Integrations (Apple Pay, Google Pay, 3DS).',
-  imageUrl: 'https://avatars.githubusercontent.com/u/27143233?v=4',
-  link: '#',
-},
+  seo: {
+    title: 'Fahad Amin | Flutter Developer Portfolio',
+    description:
+      'Flutter developer with 5+ years of experience delivering high-quality cross-platform products, payments, maps, and scalable mobile experiences.',
+    imageURL: 'https://avatars.githubusercontent.com/u/27143233?v=4',
+  },
 
   social: {
-    linkedin: 'https://www.linkedin.com/in/fahad-amin-43916b135/',
-    youtube: 'https://www.youtube.com/@fadikhan1931',
+    linkedin: 'fahad-amin-43916b135',
+    twitter: '',
+    mastodon: '',
+    researchGate: '',
+    facebook: '',
+    instagram: '',
+    reddit: '',
+    threads: '',
+    youtube: '@fadikhan1931',
+    udemy: '',
+    dribbble: '',
+    behance: '',
+    medium: '',
+    dev: '',
     stackoverflow: '',
     skype: '',
     telegram: '',
+    website: 'https://www.linkedin.com/in/fahad-amin-43916b135/',
     phone: '+923315700545',
     email: 'fahadamin1234@gmail.com',
   },
@@ -146,23 +115,19 @@ const CONFIG = {
     'Flutter',
     'Dart',
     'Flutter Web',
-    'RESTful APIs', // fixed spelling
-    'State Management (Riverpod, Bloc, GetX,Provider)',
-    'Responsive Design',
-    'Payment Integration (3DS & non‑3DS)', // clearer
-    'Apple Pay',
-    'Google Pay',
-    'Google Maps',
-    'Version Control (Git,Bitbucket)',
-    'Google Play Console Configuration',
-    'Apple App Store Configuration',
-    'Testing (Unit & Widget)',
+    'REST APIs',
+    'State Management (Riverpod, Bloc, GetX, Provider)',
     'Firebase (Auth, FCM, Dynamic Links)',
+    'Payment Integration (Apple Pay, Google Pay, 3DS)',
+    'Google Maps and Geolocation',
+    'Responsive UI and UX',
     'CI/CD (GitHub Actions, Fastlane)',
+    'App Store and Play Store Releases',
+    'Unit and Widget Testing',
   ],
 
   experiences: [
-{
+    {
       company: 'Global Financial Media',
       position: 'Flutter Developer',
       from: 'Aug 2025',
@@ -186,14 +151,14 @@ const CONFIG = {
     },
     {
       company: 'Excellence Delivered',
-      position: 'Flutter Lab Engineer (Part‑Time)',
+      position: 'Flutter Lab Engineer (Part-Time)',
       from: 'Jan 2022',
       to: 'Aug 2023',
       companyLink: 'https://www.exdnow.com/',
     },
     {
       company: 'CodeBreakers Technology',
-      position: 'Jr. Flutter Developer',
+      position: 'Junior Flutter Developer',
       from: 'Mar 2021',
       to: 'Dec 2021',
       companyLink: 'https://codebreakerstech.com/',
@@ -203,7 +168,7 @@ const CONFIG = {
   certifications: [
     {
       name: 'Certificate of Appreciation',
-      body: 'Service to IT Industry Readiness BootCamp — Techlift',
+      body: 'Service to IT Industry Readiness BootCamp - Techlift',
       year: 'Sep 2022',
       link: 'https://techlift.pk',
     },
@@ -218,8 +183,16 @@ const CONFIG = {
     },
   ],
 
+  publications: [],
+
+  blog: {
+    source: 'dev',
+    username: '',
+    limit: 3,
+  },
+
   googleAnalytics: {
-    id: '', // Add UA-XXXX or G-XXXX for analytics
+    id: '',
   },
 
   hotjar: {
@@ -228,7 +201,7 @@ const CONFIG = {
   },
 
   themeConfig: {
-    defaultTheme: 'lofi',
+    defaultTheme: 'corporate',
     disableSwitch: false,
     respectPrefersColorScheme: false,
     displayAvatarRing: true,
@@ -268,15 +241,18 @@ const CONFIG = {
       'procyon',
     ],
     customTheme: {
-      primary: '#fc055b',
-      secondary: '#219aaf',
-      accent: '#e8d03a',
-      neutral: '#2A2730',
-      'base-100': '#E3E3ED',
-      '--rounded-box': '3rem',
-      '--rounded-btn': '3rem',
+      primary: '#0d6e6e',
+      secondary: '#1f4c7a',
+      accent: '#d97706',
+      neutral: '#1f2937',
+      'base-100': '#f8fafc',
+      '--rounded-box': '1rem',
+      '--rounded-btn': '0.75rem',
     },
   },
+
+  footer:
+    'Built with <a class="text-primary" href="https://github.com/arifszn/gitprofile" target="_blank" rel="noreferrer">GitProfile</a> by Fahad Amin',
 
   enablePWA: true,
 };
