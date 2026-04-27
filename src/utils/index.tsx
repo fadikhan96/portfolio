@@ -59,6 +59,11 @@ export const getSanitizedConfig = (
         title: config?.seo?.title,
         description: config?.seo?.description,
         imageURL: config?.seo?.imageURL,
+        keywords: config?.seo?.keywords || [],
+        siteUrl: config?.seo?.siteUrl,
+        author: config?.seo?.author,
+        jobTitle: config?.seo?.jobTitle,
+        location: config?.seo?.location,
       },
       social: {
         linkedin: config?.social?.linkedin,
